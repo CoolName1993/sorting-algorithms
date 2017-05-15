@@ -6,7 +6,7 @@ package sorting
   */
 object QuickSort extends Sorting {
 
-  override def sort(array: Seq[Int]): Seq[Int] = {
+  def sort(array: Seq[Int]): Seq[Int] = {
     def quicksort(a: Seq[Int]): Seq[Int] = {
       if (a.length < 2) a // If list cannot be divided by 2 and return an integer
       else {

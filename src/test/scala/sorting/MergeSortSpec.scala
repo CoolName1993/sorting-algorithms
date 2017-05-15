@@ -19,9 +19,9 @@ class MergeSortSpec extends UnitTest {
     }
 
     "sort a large sequence of integers" in {
-      val sequence = 1000000 to 0 by -1
-      val result = MergeSort.sort(sequence)
-      result mustBe  (0 to 1000000)
+      val sequence = 2000000 to 0 by -1
+      val result = QuickSort.sort(sequence)
+      result mustBe  (0 to 2000000)
     }
 
   }
