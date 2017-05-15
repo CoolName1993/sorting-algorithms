@@ -1,8 +1,12 @@
 package sorting
 
-object QuickSort {
+/**
+  * Worst case performance: O(n^2^) Memory: n
+  * Best case performance: O(n log n) Memory: log n
+  */
+object QuickSort extends Sorting {
 
-  def sort(array: Seq[Int]): Seq[Int] = {
+  override def sort(array: Seq[Int]): Seq[Int] = {
     def quicksort(a: Seq[Int]): Seq[Int] = {
       if (a.length < 2) a // If list cannot be divided by 2 and return an integer
       else {
